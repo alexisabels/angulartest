@@ -7,10 +7,22 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
   <app-root></app-root>
+  <script>
+    window.addEventListener('load', function () {
+      document.body.style.display = 'block';
+    });
+  </script>
 </body>
 
 </html>
