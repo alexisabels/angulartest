@@ -5,4 +5,11 @@
         <button (click)="increase()">👍</button>
         <button (click)="decrease()">👎</button>
     </div>
+    @if (count == 0) {
+    <p>No tienes likes aún 😢</p>
+    } @else if (count < 0) { <p>Tienes {{count}} like 😢</p>
+        } @else if (count > 0) {
+        <p>¡Tienes {{count}} likes! 🎉</p>
+        }
+
 </div>
